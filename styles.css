@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;700;800&family=Poppins:wght@200;400&family=Roboto+Mono:wght@300;600&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
+
+}
+header h1{
+    font-weight: 800;
+}
+header .about{
+    margin-right: 30px;
+    font-size: larger;
+    font-family: "Poppins",sans sans-serif;
+}
+body{
+    font-family: "Abhaya L", serif;
+}
+.container{
+    max-width: 80%;
+    display: grid;
+    margin: 10px 15px;
+    grid-template-areas:
+        "card1 card2 card3"
+        "card4 card5 card6";
+
+}
+.container .crew{
+    display: flex;
+    flex-direction: column;
+    max-width: 33.33%;
+    min-height: 500px;
+    padding: 10px;
+    margin: auto;
+}
+.container .crew .crew-header{
+    display: flex;
+}
+.container .crew .crew-header img{
+    width: 238px;
+    height: 341px;
+}
+.container .crew .crew-header .leter-tranform{
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    text-transform: uppercase;
+    position: relative;
+}
+
+body .container .down {
+    padding-top: 80px;
+}
+
+.container .crew p {
+    font-weight: 700;
+}
+
+.container .card-1 {
+    grid-area: card1;
+}
+.container .card-2 {
+    grid-area: card2;
+}
+.container .card-3 {
+    grid-area: card3;
+}
+.container .card-4 {
+    grid-area: card4;
+}
+.container .card-5 {
+    grid-area: card5;
+}
+.container .card-6 {
+    grid-area: card6;
+}
+
+footer{
+    margin: 20px 20px;
+    color: grey;
+    text-align: center;
+}
+
+
+@media (max-width: 575.98px) {
+    header {
+        flex-direction: column;
+    }
+    header h1 {
+
+        margin-bottom: 30px;
+    }
+    header .about{
+        margin: 0;
+    }
+    .container {
+        max-width: 100%;
+        margin: 10px -60px;
+        grid-template-areas:
+      "card1 card2"
+      "card3 card4"
+      "card5 card6";
+    }
+
+    .container .crew .crew-header img {
+        width: 156px;
+        height: 273px;
+    }
+
+    .container .card-3 {
+        position: relative;
+        bottom: 150px;
+    }
+    .container .card-4 {
+        position: relative;
+        bottom: 80px;
+    }
+    .container .card-5 {
+        position: relative;
+        bottom: 350px;
+    }
+    .container .card-6 {
+        position: relative;
+        bottom: 200px;
+    }
+}
